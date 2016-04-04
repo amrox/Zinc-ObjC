@@ -9,7 +9,7 @@ target :Zinc, :exclusive => true do
 
 	target :Tests do
 		pod 'OCMock', '~> 2.2.1'
-		pod 'Kiwi', '~> 2.2.3'
+		pod 'Kiwi', '~> 2.4'
 		link_with 'ZincTests'
 	end
 
@@ -30,7 +30,7 @@ target :ZincOSX, :exclusive => true do
 	
 	target :Tests do
 		pod 'OCMock', '~> 2.2.1'
-		pod 'Kiwi', '~> 2.2.3'
+		pod 'Kiwi', '~> 2.4'
 		link_with 'ZincTests-OSX'
 	end
 end

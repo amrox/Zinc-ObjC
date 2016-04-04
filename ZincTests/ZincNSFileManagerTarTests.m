@@ -9,7 +9,7 @@
 #import "NSFileManager+ZincTar.h"
 
 
-@interface ZincNSFileManagerTarTests : SenTestCase
+@interface ZincNSFileManagerTarTests : XCTestCase
 @property (nonatomic, retain) NSString* myDir;
 @end
 
@@ -36,7 +36,7 @@
     
     NSError* error = nil;
     BOOL success = [[NSFileManager defaultManager] zinc_createFilesAndDirectoriesAtPath:self.myDir withTarData:tarData error:&error];
-    STAssertFalse(success, @"should not have succeeded");
+    XCTAssertFalse(success, @"should not have succeeded");
 }
 
 - (void) testTarHasInvalidBlockSize
@@ -48,7 +48,7 @@
     
     NSError* error = nil;
     BOOL success = [[NSFileManager defaultManager] zinc_createFilesAndDirectoriesAtPath:self.myDir withTarData:tarData error:&error];
-    STAssertFalse(success, @"should not have succeeded");
+    XCTAssertFalse(success, @"should not have succeeded");
 }
 
 @end
