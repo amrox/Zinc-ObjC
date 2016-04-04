@@ -74,7 +74,7 @@ describe(@"ZincBundleAvailabilityMonitorActivityItem", ^{
 
         context(@"has an operation", ^{
 
-            __block id operation;
+            __block ZincOperation* operation;
 
             beforeEach(^{
                 ZincBundleAvailabilityRequirement* req = [ZincBundleAvailabilityRequirement requirementForBundleID:bundleID versionSpecifier:ZincBundleVersionSpecifierAny];
