@@ -3,7 +3,7 @@ inhibit_all_warnings!
 
 target :Zinc, :exclusive => true do
 
-	pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
+	#pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
 	podspec :path => "Zinc.podspec"
 	link_with ['Zinc', 'ZincDemo']
 
@@ -24,7 +24,7 @@ target :ZincOSX, :exclusive => true do
 
 	platform :osx, "10.8"
 
-	pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
+	#pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
 	podspec :path => "Zinc.podspec"
 	link_with 'Zinc-OSX'
 	

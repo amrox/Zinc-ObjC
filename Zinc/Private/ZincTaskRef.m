@@ -49,7 +49,7 @@
 - (ZincTask*) getTask
 {
     if ([self.dependencies count] > 0) {
-        return (self.dependencies)[0];
+        return (ZincTask*)(self.dependencies)[0];
     }
     return nil;
 }
