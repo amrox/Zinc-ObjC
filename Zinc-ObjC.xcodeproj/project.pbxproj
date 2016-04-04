@@ -1520,7 +1520,6 @@
 				B340F978148D52D800206F86 /* Sources */,
 				B340F979148D52D800206F86 /* Frameworks */,
 				B340F97A148D52D800206F86 /* Resources */,
-				B340F97B148D52D800206F86 /* ShellScript */,
 				87627306861E46F6BEA17D38 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1599,7 +1598,6 @@
 				B3D4CEB9184D50C3002015AA /* Sources */,
 				B3D4CED1184D50C3002015AA /* Frameworks */,
 				B3D4CEDC184D50C3002015AA /* Resources */,
-				B3D4CEE1184D50C3002015AA /* ShellScript */,
 				B3D4CEE2184D50C3002015AA /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1846,19 +1844,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 		};
-		B340F97B148D52D800206F86 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		B3D4CEB8184D50C3002015AA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1872,19 +1857,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-		};
-		B3D4CEE1184D50C3002015AA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 		B3D4CEE2184D50C3002015AA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
