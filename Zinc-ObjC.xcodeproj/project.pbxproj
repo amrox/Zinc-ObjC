@@ -259,7 +259,6 @@
 		B3B7BA96157D436C00613B8B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AD8B7114FD7CBD00B5F9ED /* CFNetwork.framework */; };
 		B3BE1CDA14D79ECA00C61515 /* ZincDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BE1CD814D79EC800C61515 /* ZincDownloadTask.m */; };
 		B3BFF9E115C62363005A879E /* ZincTaskRef.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BFF9DF15C62363005A879E /* ZincTaskRef.m */; };
-		B3C4B55B1804DFD0002B1140 /* libPods-Zinc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C4B55A1804DFD0002B1140 /* libPods-Zinc.a */; };
 		B3C4B55C1804DFE4002B1140 /* libZinc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B340F970148D52D800206F86 /* libZinc.a */; };
 		B3C4B55E1804E1FD002B1140 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C4B55D1804E1FD002B1140 /* Default-568h@2x.png */; };
 		B3C512B2175E57FB00E5A93B /* ZincRepoTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C512B0175E57FB00E5A93B /* ZincRepoTaskManager.h */; };
@@ -687,6 +686,8 @@
 		B3F8AF75148EFCDF00CB92B5 /* ZincRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ZincRepo.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B3FD3317185BB9E9004875EE /* ZincURLSessionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZincURLSessionFactory.h; sourceTree = "<group>"; };
 		B3FD3318185BB9E9004875EE /* ZincURLSessionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZincURLSessionFactory.m; sourceTree = "<group>"; };
+		B3FE34571CB294DB00541F83 /* libPods-Zinc-AMError.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Zinc-AMError.a"; path = "../../Library/Developer/Xcode/DerivedData/Zinc-ObjC-ghrmfwkhxibtmahgvmejyvulecdm/Build/Products/Debug-iphonesimulator/libPods-Zinc-AMError.a"; sourceTree = "<group>"; };
+		B3FE34591CB294E800541F83 /* libPods-Zinc-MSWeakTimer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Zinc-MSWeakTimer.a"; path = "../../Library/Developer/Xcode/DerivedData/Zinc-ObjC-ghrmfwkhxibtmahgvmejyvulecdm/Build/Products/Debug-iphonesimulator/libPods-Zinc-MSWeakTimer.a"; sourceTree = "<group>"; };
 		CA888BB1C911B803BD7FF92F /* Pods-ZincOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZincOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZincOSX/Pods-ZincOSX.debug.xcconfig"; sourceTree = "<group>"; };
 		D00356D8153760220021627E /* ZincEvent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZincEvent+Private.h"; sourceTree = "<group>"; };
 		DB93EB1421814FB1BB2E1C37 /* libPods-Zinc-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zinc-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -760,7 +761,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C4B55C1804DFE4002B1140 /* libZinc.a in Frameworks */,
-				B3C4B55B1804DFD0002B1140 /* libPods-Zinc.a in Frameworks */,
 				B3ACA22C15DCC94C000C842D /* SystemConfiguration.framework in Frameworks */,
 				B3AD8B7214FD7CBD00B5F9ED /* CFNetwork.framework in Frameworks */,
 				B30B763C14B75750004E6587 /* libz.dylib in Frameworks */,
@@ -1053,6 +1053,8 @@
 		B38743071489B830004B227B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3FE34591CB294E800541F83 /* libPods-Zinc-MSWeakTimer.a */,
+				B3FE34571CB294DB00541F83 /* libPods-Zinc-AMError.a */,
 				5D9EAE466FC244928D4779AB /* libPods-Zinc.a */,
 				B306DD4317F3CE2B008A27F9 /* libPods-ZincTests.a */,
 				F3EE35B1AB2A49B99B98D88B /* libPods-ZincFunctionalTests.a */,
@@ -1521,6 +1523,7 @@
 				B340F979148D52D800206F86 /* Frameworks */,
 				B340F97A148D52D800206F86 /* Resources */,
 				87627306861E46F6BEA17D38 /* Copy Pods Resources */,
+				C4A69EA75AACF273804B1D14 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1900,6 +1903,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZincOSX/Pods-ZincOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A69EA75AACF273804B1D14 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zinc-Tests/Pods-Zinc-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2477,10 +2495,8 @@
 				INFOPLIST_FILE = "ZincDemo/Zinc-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mindsnacks.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Zinc-iOS";
-				VALID_ARCHS = "arm64 armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2493,10 +2509,8 @@
 				GCC_PREFIX_HEADER = "ZincDemo/Zinc-Demo-Prefix.pch";
 				INFOPLIST_FILE = "ZincDemo/Zinc-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mindsnacks.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Zinc-iOS";
-				VALID_ARCHS = "arm64 armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

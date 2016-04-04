@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B340F97C148D52D800206F86"
-               BuildableName = "ZincTests.octest"
+               BuildableName = "ZincTests.xctest"
                BlueprintName = "ZincTests"
                ReferencedContainer = "container:Zinc-ObjC.xcodeproj">
             </BuildableReference>
