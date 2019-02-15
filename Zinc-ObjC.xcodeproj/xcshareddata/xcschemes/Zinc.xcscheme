@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B340F96F148D52D800206F86"
-               BuildableName = "libZinc.a"
+               BlueprintIdentifier = "3592AD241D9F2A560024E326"
+               BuildableName = "Zinc.framework"
                BlueprintName = "Zinc"
                ReferencedContainer = "container:Zinc-ObjC.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B340F97C148D52D800206F86"
-               BuildableName = "ZincTests.xctest"
+               BuildableName = "ZincTests.octest"
                BlueprintName = "ZincTests"
                ReferencedContainer = "container:Zinc-ObjC.xcodeproj">
             </BuildableReference>
@@ -55,8 +55,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B340F96F148D52D800206F86"
-            BuildableName = "libZinc.a"
+            BlueprintIdentifier = "3592AD241D9F2A560024E326"
+            BuildableName = "Zinc.framework"
             BlueprintName = "Zinc"
             ReferencedContainer = "container:Zinc-ObjC.xcodeproj">
          </BuildableReference>

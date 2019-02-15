@@ -31,7 +31,7 @@
 //------------------
 
 /**
- @param refreshInterval set the auto refresh interval. Set to `0` to disable  auto refresh
+ @property refreshInterval set the auto refresh interval. Set to `0` to disable  auto refresh
  */
 @property (nonatomic, assign) NSTimeInterval refreshInterval;
 

@@ -1,38 +1,43 @@
-platform :ios, "6.0"
+platform :ios, "8.4"
 inhibit_all_warnings!
 
-target :Zinc, :exclusive => true do
+abstract_target 'Zinc_iOS' do
 
-	#pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
+	pod 'AMError', '~> 0.2.6'
 	podspec :path => "Zinc.podspec"
-	link_with ['Zinc', 'ZincDemo']
 
-	target :Tests do
-		pod 'OCMock', '~> 2.2.1'
-		pod 'Kiwi', '~> 2.4'
-		link_with 'ZincTests'
+	target 'Zinc' do 
 	end
 
-	target :FunctionalTests do
+	target 'ZincDemo' do
+		pod 'Zinc', :path => "Zinc.podspec"
+	end
+
+	target 'ZincTests' do
+		pod 'OCMock', '~> 2.2.1'
+		pod 'Kiwi', '~> 2.4'
+	end
+
+	target 'ZincFunctionalTests' do
 		pod 'GHUnitIOS', '~> 0.5.6'
-		link_with 'ZincFunctionalTests'
 	end
 
 end
 
-target :ZincOSX, :exclusive => true do
-
-	platform :osx, "10.8"
-
-	#pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
-	podspec :path => "Zinc.podspec"
-	link_with 'Zinc-OSX'
-	
-	target :Tests do
-		pod 'OCMock', '~> 2.2.1'
-		pod 'Kiwi', '~> 2.4'
-		link_with 'ZincTests-OSX'
-	end
-end
+#abstract_target 'Zinc_OSX' do
+#
+#	platform :osx, "10.8"
+#
+#	pod 'AMError', :git => 'https://github.com/amrox/AMError.git'
+#	podspec :path => "Zinc.podspec"
+#	
+#	target 'Zinc'do
+#	end
+#	
+#	target 'ZincTests-OSX' do
+#		pod 'OCMock', '~> 2.2.1'
+#		pod 'Kiwi', '~> 2.2.3'
+#	end
+#end
 
 

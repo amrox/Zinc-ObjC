@@ -24,6 +24,8 @@
 
 @implementation ZincObjectDownloadTask
 
+@synthesize bytesRead = _bytesRead;
+
 - (NSString*) sha
 {
     return [self.resource zincObjectSHA];

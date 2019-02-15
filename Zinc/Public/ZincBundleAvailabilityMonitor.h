@@ -34,7 +34,6 @@
 - (id)initWithRepo:(ZincRepo*)repo requirements:(NSArray*)requirements;
 
 /**
- @param requireCatalogVersion this is used for all bundleIDs
  */
 - (id)initWithRepo:(ZincRepo*)repo bundleIDs:(NSArray*)bundleIDs versionSpecifier:(ZincBundleVersionSpecifier)versionSpecifier;
 

@@ -45,7 +45,8 @@ static double _defaultThreadPriority = kZincOperationInitialDefaultThreadPriorit
 {
     self = [super init];
     if (self) {
-        self.threadPriority = [[self class] defaultThreadPriority];
+        // Deprecated in iOS 8.0
+        //self.threadPriority = [[self class] defaultThreadPriority];
         _myChildOperations = [NSMutableSet set];
         _readinessUpdateInterval = kZincOperationDefaultReadinessUpdateInterval;
     }

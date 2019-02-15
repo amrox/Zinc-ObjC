@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name                    = "Zinc"
-  s.version                 = "0.3.0"
+  s.version                 = "0.3.1"
   s.summary                 = "Objective-C client for Zinc file distribution system."
-  s.homepage                = "http://mindsnacks.github.io/Zinc/"
+  s.homepage                = "http://amrox.github.io/Zinc/"
   s.license                 = { :type => 'BSD', :file => 'LICENSE' }
-  s.author                  = { "Andy Mroczkowski" => "andy@mrox.net" }
-  s.source                  = { :git => "https://github.com/mindsnacks/Zinc-ObjC.git", :tag => "#{s.version}" }
+  s.author                  = { "Andy Mroczkowski" => "a@mrox.co" }
+  s.source                  = { :git => "https://github.com/amrox/Zinc-ObjC.git", :tag => "#{s.version}" }
 
-  s.ios.deployment_target   = '6.0'
+  s.ios.deployment_target   = '8.4'
   s.osx.deployment_target   = '10.8'
 
   s.prefix_header_file      = 'Zinc/Private/Zinc-Prefix.pch'
